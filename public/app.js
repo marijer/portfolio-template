@@ -15,6 +15,22 @@ var express = require('express'),
 	    link: "www.marijerooze.nl/thesis/graphics",
 	    description: "lalalla",
 	    image: ".png"
+	  },
+	  {
+	    guid: "c214d676-a056-4e77-914c-dfa96e5c93b8",
+	    title: "Europeana Contributions",
+	   	year: "2013",
+	    link: "www.marijerooze.nl/thesis/graphics",
+	    description: "lalalla",
+	    image: ".png"
+	  },
+	  {
+	    guid: "c214d676-a056-4e77-914c-dfa96e5c93b8",
+	    title: "Europeana Contributions",
+	   	year: "2013",
+	    link: "www.marijerooze.nl/thesis/graphics",
+	    description: "lalalla",
+	    image: ".png"
 	  }
 	];
 
