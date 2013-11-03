@@ -4,10 +4,10 @@ var express = require('express'),
 
     app = express();
 
-	app.engine('handlebars', exphbs({defaultLayout: 'main'}));
-	app.set("views", path.join(__dirname, "views"));
-	app.set('view engine', 'handlebars');
-    app.use(express.static(path.join(__dirname, 'public')));  // serve static files
+	app.engine('handlebars', exphbs({defaultLayout: 'main'}))
+  	 .set("views", path.join(__dirname, "views"))
+  	 .set('view engine', 'handlebars')
+     .use(express.static(path.join(__dirname, 'public')));  // serve static files
 
 var fs = require('fs');
 

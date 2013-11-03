@@ -8,6 +8,14 @@ a {
 	text-decoration: none;
 }
 
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
 .header {
 	background-color: #CCC;
 	height: 60px;
@@ -18,16 +26,34 @@ a {
 	margin: 0 auto;
 }
 
+.header .wrapper {
+	padding: 15px;
+	font-size: 1.7em;
+}
+
 h2.title {
-	margin: 5px 0;
+	margin: 0 0 5px 0;
 	font-weight: 200;
+	font-size: 1.4em;
 }
 
 .project {
-	float: left;
 	max-width: 450px;
 	min-width: 300px;
 	border: 1px solid #CCC;
-	margin: 15px 10px 0 0;
+	margin: 0 50px 20px 0;
 	padding: 5px 10px;
+}
+
+.project-content {
+	width: 45%;
+	padding-right: 5%;
+}
+
+.project-img {
+	width: 50%;
+}
+
+.project-img img {
+	width: 100%;
 }

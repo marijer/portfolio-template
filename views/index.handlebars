@@ -2,12 +2,16 @@
 
 <div class="project-wrapper">
 	{{#each contacts}}
-	            <div class="project" data-contact-guid="{{guid}}">
-	              <h2 class="title" >{{title}}</h2>
-	              <a class="link" href="{{link}}">Visit Project</a>
-	              <div class="descrip" >{{description}}</div>
-	              <div class="year" >{{year}}</div>
-
+	            <div class="project left" data-contact-guid="{{guid}}">
+		            <div class="project-content left">
+		              <h2 class="title" >{{title}}</h2>
+		              <div class="descrip" >{{description}}</div>
+		              <div class="year" >{{year}}</div>
+					</div>
+					<div class="project-img left">
+						<img src="/img/{{img}}" alt="Project Image">
+		            	<a class="link" href="{{link}}">Visit Project</a>
+					</div>
 	            </div>
 	{{/each}}
 </div>

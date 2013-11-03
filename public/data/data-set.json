@@ -3,25 +3,25 @@
       "guid": "c214d676-a056-4e77-914c-dfa96e5c93b8",
       "title": "Europeana Contributions",
       "year": "2013",
-      "link": "www.marijerooze.nl/thesis/graphics",
+      "link": "www.marijerooze.nl/projects/Europeana",
       "description": "Quisque nisl mauris, pulvinar vel ultrices nec, varius in turpis. Aenean vel dolor porttitor, feugiat libero ut, interdum augue. Morbi vel convallis nunc. Sed commodo imperdiet convallis. Praesent malesuada, metus ut tincidunt ultricies, leo sem.",
-      "image": ".png"
+      "img": "test.jpg"
     },
     {
       "guid": "c214d676-a056-4e77-914c-dfa96e5c93b8",
       "title": "Collection Interactive News Graphics",
       "year": "2012",
-      "link": "www.marijerooze.nl/thesis/graphics",
+      "link": "http://www.marijerooze.nl/thesis/graphics",
       "description": "Quisque nisl mauris, pulvinar vel ultrices nec, varius in turpis. Aenean vel dolor porttitor, feugiat libero ut, interdum augue. Morbi vel convallis nunc. Sed commodo imperdiet convallis. Praesent malesuada, metus ut tincidunt ultricies, leo sem.",
-      "image": ".png"
+      "img": "test.jpg"
     },
     {
       "guid": "c214d676-a056-4e77-914c-dfa96e5c93b8",
       "title": "The Hero's Journey",
       "year": "2013",
-      "link": "www.marijerooze.nl/thesis/graphics",
+      "link": "http://www.marijerooze.nl/Infograph",
       "description": "Quisque nisl mauris, pulvinar vel ultrices nec, varius in turpis. Aenean vel dolor porttitor, feugiat libero ut, interdum augue. Morbi vel convallis nunc. Sed commodo imperdiet convallis. Praesent malesuada, metus ut tincidunt ultricies, leo sem.",
-      "image": ".png"
+      "img": "test.jpg"
     }
 ]
   
