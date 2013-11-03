@@ -19,7 +19,7 @@ var fs = require('fs');
     //console.dir(myObj);
   }
   catch (err) {
-    console.log('There has been an error parsing your JSON.')
+    console.log('There has been an error parsing your JSON.');
     console.log(err);
   }
 
