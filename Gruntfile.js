@@ -3,16 +3,6 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-      },
-
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
-      }
-    },
 
     jshint: {
       files: ['Gruntfile.js', 'app.js'],
@@ -37,6 +27,14 @@ module.exports = function(grunt) {
       }
     },
 
+    uglify: {
+        build: {
+            files: {
+                'public/js/main.min.js': ['public/js/main.js']
+            }
+        }
+    },    
+
    watch: {
       options: {
         livereload: true,
@@ -44,7 +42,6 @@ module.exports = function(grunt) {
       files: ['views/*'],
       tasks: [''],
     }
-
 
   });
 
@@ -61,7 +58,7 @@ module.exports = function(grunt) {
   // Default task(s).
   grunt.registerTask('default', ['uglify']);
   grunt.registerTask('watch2', ['watch']);
-  grunt.registerTask('min', ['cssmin']);
+  grunt.registerTask('min', ['cssmin', 'uglify']);
 
 
   grunt.registerTask('hint', ['jshint']);
