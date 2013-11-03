@@ -5,6 +5,7 @@ var express = require('express'),
     app = express();
 
 	app.engine('handlebars', exphbs({defaultLayout: 'main'}))
+     .use(express.favicon("public/img/favicon.ico")) 
   	 .set("views", path.join(__dirname, "views"))
   	 .set('view engine', 'handlebars')
      .use(express.static(path.join(__dirname, 'public')));  // serve static files
@@ -38,4 +39,3 @@ app.get('/about', function (req, res) {
 });
 
 app.listen(3000);
-
