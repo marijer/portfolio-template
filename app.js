@@ -24,11 +24,17 @@ var fs = require('fs');
   }
 
 app.get('/', function (req, res) {
-    res.render('index', {contacts: projects});
+
+    res.render('index', {
+        contacts: projects,
+        title: "Work"
+      });
 });
 
 app.get('/about', function (req, res) {
-    res.render('about');
+    res.render('about', {
+        title: "About"
+      });
 });
 
 app.listen(3000);

@@ -8,6 +8,12 @@ a {
 	text-decoration: none;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
 .left {
 	float: left;
 }
@@ -16,19 +22,32 @@ a {
 	float: right;
 }
 
-.header {
-	background-color: #CCC;
-	height: 60px;
-}
-
 .wrapper {
 	max-width: 1050px;
 	margin: 0 auto;
 }
 
+.header {
+	background-color: #CCC;
+	height: 60px;
+}
+
 .header .wrapper {
 	padding: 15px;
 	font-size: 1.7em;
+}
+
+.submenu {
+	background-color: rgb(68, 68, 68);
+	overflow:hidden;
+}
+
+.submenu-list li {
+	float: left;
+	padding: 5px 40px 5px 0;
+	font-size: 1.2em;
+	font-weight: 400;
+	color: #ECECEC;
 }
 
 h2.title {
