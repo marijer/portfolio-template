@@ -12,12 +12,12 @@ var express = require('express'),
 
 var fs = require('fs');
 
-  var data = fs.readFileSync('public/data/data-set.json'),
+  var data = fs.readFileSync( 'public/data/data-set.json' ),
       projects;
 
   try {
-    projects = JSON.parse(data);
-    //console.dir(myObj);
+    projects = JSON.parse( data );
+    //console.dir( projects );
   }
   catch (err) {
     console.log('There has been an error parsing your JSON.');

@@ -17,6 +17,14 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+          main: {
+            files: [
+             { expand: true, flatten: true, src: ['bower_components/jquery/jquery.min.js'], dest: 'public/js/'}
+            ]
+          }
+    },
+
     cssmin: {   // minifies css
       minify: {
         expand: true,
@@ -49,17 +57,15 @@ module.exports = function(grunt) {
     grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
   });
 
-  // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['cssmin', 'uglify', 'copy']);
   grunt.registerTask('watch2', ['watch']);
-  grunt.registerTask('min', ['cssmin', 'uglify']);
-
 
   grunt.registerTask('hint', ['jshint']);
 };
