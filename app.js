@@ -1,10 +1,13 @@
 var express = require('express'),
     exphbs  = require('express3-handlebars'),
+    path = require('path'),
 
     app = express();
 
 	app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+	app.set("views", path.join(__dirname, "views"));
 	app.set('view engine', 'handlebars');
+    app.use(express.static(path.join(__dirname, 'public')));  // serve static files
 
 
 	var db = [
@@ -37,8 +40,6 @@ var express = require('express'),
 app.get('/', function (req, res) {
     res.render('index', {contacts: db});
 });
-
-
 
 app.listen(3000);
 
