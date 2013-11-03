@@ -9,36 +9,22 @@ var express = require('express'),
 	app.set('view engine', 'handlebars');
     app.use(express.static(path.join(__dirname, 'public')));  // serve static files
 
+var fs = require('fs');
 
-	var db = [
-	  {
-	    guid: "c214d676-a056-4e77-914c-dfa96e5c93b8",
-	    title: "Europeana Contributions",
-	   	year: "2013",
-	    link: "www.marijerooze.nl/thesis/graphics",
-	    description: "lalalla",
-	    image: ".png"
-	  },
-	  {
-	    guid: "c214d676-a056-4e77-914c-dfa96e5c93b8",
-	    title: "Europeana Contributions",
-	   	year: "2013",
-	    link: "www.marijerooze.nl/thesis/graphics",
-	    description: "lalalla",
-	    image: ".png"
-	  },
-	  {
-	    guid: "c214d676-a056-4e77-914c-dfa96e5c93b8",
-	    title: "Europeana Contributions",
-	   	year: "2013",
-	    link: "www.marijerooze.nl/thesis/graphics",
-	    description: "lalalla",
-	    image: ".png"
-	  }
-	];
+  var data = fs.readFileSync('public/data/data-set.json'),
+      projects;
+
+  try {
+    projects = JSON.parse(data);
+    //console.dir(myObj);
+  }
+  catch (err) {
+    console.log('There has been an error parsing your JSON.')
+    console.log(err);
+  }
 
 app.get('/', function (req, res) {
-    res.render('index', {contacts: db});
+    res.render('index', {contacts: projects});
 });
 
 app.listen(3000);
