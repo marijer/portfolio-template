@@ -44,4 +44,10 @@ app.get('/cv', function (req, res) {
       });
 });
 
+app.get('/add', function (req, res) {
+    res.render('add', {
+        title: "add"
+      });
+});
+
 app.listen(3000);

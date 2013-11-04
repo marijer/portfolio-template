@@ -47,6 +47,9 @@ ul {
 	padding: 5px 40px 5px 0;
 	font-size: inherit;
 	font-weight: 400;
+}
+
+.submenu-list a {
 	color: #ECECEC;
 }
 
