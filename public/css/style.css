@@ -50,7 +50,11 @@ ul {
 }
 
 .submenu-list a {
-	color: #ECECEC;
+	color: #CECECE;
+}
+
+.submenu-list a.active {
+	color: #FFF;
 }
 
 h2.title {
@@ -79,7 +83,6 @@ h2.title {
 .project-img img {
 	width: 100%;
 }
-
 
 form input, form textarea {
 	display: block;

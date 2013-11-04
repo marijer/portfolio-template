@@ -27,4 +27,21 @@ $( document ).ready(function() {
 		evt.preventDefault();
 	})
 
+
+
+	/* SIMPLE SETUP OF NAVIGATION CLASSES */
+
+		$( ".submenu-list li a" ).each(function() {
+			console.log (title);
+		  var value = this.innerHTML;
+		  var el = $(this);
+
+		  if ( value.toLowerCase() === title.toLowerCase() ) {
+		  		el.addClass ('active');
+		  } else if ( el.hasClass ('active') ) {
+		  		el.removeClass ('active');
+		  }
+		});
+
+
 });
