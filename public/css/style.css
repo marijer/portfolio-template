@@ -118,7 +118,8 @@ input[type=text]:focus, textarea:focus {
 .footer {
 	clear: both;
 	padding: 10px 0;
-	background: #CCC;
+	background: #ECECEC;
+	border-top: 1px solid #CCC;
 }
 
 .footer .grid {
