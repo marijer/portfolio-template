@@ -49,8 +49,8 @@ module.exports = function(grunt) {
       options: {
         livereload: true,
       },
-      files: ['views/*'],
-      tasks: [''],
+      files: ['public/css/*'],
+      tasks: ['cssmin'],
     }
 
   });
@@ -65,9 +65,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
+
   // Default task(s).
   grunt.registerTask('default', ['cssmin', 'uglify', 'copy']);
   grunt.registerTask('watch2', ['watch']);
+  grunt.registerTask('con', ['connect']);
 
   grunt.registerTask('hint', ['jshint']);
 };
