@@ -25,6 +25,11 @@ ul {
 .wrapper {
 	max-width: 1050px;
 	margin: 0 auto;
+	overflow:hidden;
+}
+
+.content-wrapper {
+	min-height: 600px;
 }
 
 .header {
@@ -106,4 +111,17 @@ form input.invalid {
 input[type=text]:focus, textarea:focus {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   border-color: rgba(81, 203, 238, 1);
+}
+
+
+/* FOOTER */
+
+.footer {
+	clear: both;
+	padding: 10px 0;
+	background: #CCC;
+}
+
+.footer .grid {
+	width: 33%;
 }

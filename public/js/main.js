@@ -32,7 +32,6 @@ $( document ).ready(function() {
 	/* SIMPLE SETUP OF NAVIGATION CLASSES */
 
 		$( ".submenu-list li a" ).each(function() {
-			console.log (title);
 		  var value = this.innerHTML;
 		  var el = $(this);
 

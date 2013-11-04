@@ -20,7 +20,9 @@ module.exports = function(grunt) {
     copy: {
           main: {
             files: [
-             { expand: true, flatten: true, src: ['bower_components/jquery/jquery.min.js'], dest: 'public/js/'}
+             { expand: true, flatten: true, src: ['bower_components/jquery/jquery.min.js'], dest: 'public/js/'},
+             { expand: true, flatten: true, src: ['bower_components/font-awesome/css/font-awesome.min.css'], dest: 'public/css/'},
+             { expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/**'], dest: 'public/fonts/'}
             ]
           }
     },
