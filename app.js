@@ -38,4 +38,10 @@ app.get('/about', function (req, res) {
       });
 });
 
+app.get('/cv', function (req, res) {
+    res.render('cv', {
+        title: "CV"
+      });
+});
+
 app.listen(3000);
