@@ -34,11 +34,13 @@ ul {
 
 .header {
 	background-color: #CCC;
-	height: 60px;
+	height: auto;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
 }
 
 .header .wrapper {
-	padding: 15px;
+	padding: 10px 15px 15px;
 	font-size: 1.7em;
 }
 
@@ -49,12 +51,21 @@ ul {
 
 .submenu-list li {
 	float: left;
-	padding: 5px 40px 5px 0;
+	padding: 5px 50px 5px 0;
 	font-size: .9em;
 }
 
 .submenu-list a {
 	color: #CECECE;
+
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+}
+
+.submenu-list a:hover {
+	color: #FFF;
 }
 
 .submenu-list a.active {
@@ -88,12 +99,21 @@ h2.title {
 	width: 100%;
 }
 
-form input, form textarea {
+/* FORM */
+
+.form-group {
 	display: block;
+	margin-bottom: 10px;
+}
+
+.form-group label{
+	display: block;
+}
+
+form input, form textarea {
 	width: 250px;
 	padding: 7px 5px;
 	border: 1px solid #ccc;
-	margin-bottom: 10px;
 	border-radius: 3px;
 
 	  -webkit-transition: all 0.30s ease-in-out;
@@ -112,6 +132,14 @@ input[type=text]:focus, textarea:focus {
   border-color: rgba(81, 203, 238, 1);
 }
 
+.alert.alert-error {
+	width: 250px;
+	background: rgb(255, 242, 174);
+	padding: 5px;
+	border: 1px solid rgb(255, 224, 168);
+	border-radius: 3px;
+	margin-left: 20px;
+}
 
 /* FOOTER */
 

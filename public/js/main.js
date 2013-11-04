@@ -12,7 +12,7 @@ $( document ).ready(function() {
 				return true;
 			} else {
 				$el.addClass ('invalid');
-				$el.siblings( ".alert-error" ).css ('display', 'block');
+				$el.siblings( ".alert-error" ).css ('display', 'inline-block');
 				return false;
 			}	
 		}

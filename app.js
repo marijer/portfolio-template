@@ -52,6 +52,6 @@ app.get('/add', function (req, res) {
       });
 });
 
-var port = process.env.PORT || 8080;   // set process.env.port for heroku, who listens to this
+var port = process.env.PORT || 3000;   // set process.env.port for heroku, who listens to this
 app.listen(port);
 console.log("The server is now listening on port %s", port);
