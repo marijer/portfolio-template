@@ -4,11 +4,13 @@ var express = require('express'),
 
     app = express();
 
+
 	app.engine('handlebars', exphbs({defaultLayout: 'main'}))
      .use(express.favicon("public/img/favicon.ico")) 
   	 .set("views", path.join(__dirname, "views"))
   	 .set('view engine', 'handlebars')
-     .use(express.static(path.join(__dirname, 'public')));  // serve static files
+     .use(express.static(path.join(__dirname, 'public')))  // serve static files
+     .use(express.bodyParser());
 
 var fs = require('fs');
 
@@ -50,4 +52,6 @@ app.get('/add', function (req, res) {
       });
 });
 
-app.listen(8080);
+var port = process.env.PORT || 8080;   // set process.env.port for heroku, who listens to this
+app.listen(port);
+console.log("The server is now listening on port %s", port);
