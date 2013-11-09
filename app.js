@@ -4,7 +4,6 @@ var express = require('express'),
 
     app = express();
 
-
 	app.engine('handlebars', exphbs({defaultLayout: 'main'}))
      .use(express.favicon("public/img/favicon.ico")) 
   	 .set("views", path.join(__dirname, "views"))
@@ -29,29 +28,23 @@ var fs = require('fs');
 app.get('/', function (req, res) {
 
     res.render('index', {
-        contacts: projects,
+        contacts: projects.projects,
         title: "Work"
       });
 });
 
-app.get('/about', function (req, res) {
-    res.render('about', {
-        title: "About"
-      });
-});
 
 app.get('/cv', function (req, res) {
     res.render('cv', {
+        experience: projects.cv.experience,
+        education: projects.cv.education,
+        about: projects.cv.about,
+        skills: projects.cv.skills,
         title: "CV"
       });
 });
 
-app.get('/add', function (req, res) {
-    res.render('add', {
-        title: "add"
-      });
-});
 
-var port = process.env.PORT || 3000;   // set process.env.port for heroku, who listens to this
+var port = process.env.PORT || 5000;   // set process.env.port for heroku, who listens to this
 app.listen(port);
 console.log("The server is now listening on port %s", port);

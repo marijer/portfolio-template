@@ -1,16 +1,47 @@
 <h2>CV</h2>
+<h3> Permanent Beta </h3>
 
-<h3>Experience</h3>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula auctor, adipiscing ipsum in, gravida ligula. Vivamus enim ipsum, imperdiet in eros a, egestas laoreet erat. Proin ultricies purus nec blandit feugiat. Donec at consectetur purus. Donec nibh dolor, blandit nec hendrerit ut, interdum vitae dui. Donec faucibus id elit nec interdum. Sed pretium placerat tortor eget vulputate. Donec non ipsum non lorem vehicula vulputate ut eu massa.
-</p>
+<section class="experience">
+	<h3>Education</h3>
 
-<h3>Education</h3>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula auctor, adipiscing ipsum in, gravida ligula. Vivamus enim ipsum, imperdiet in eros a, egestas laoreet erat. Proin ultricies purus nec blandit feugiat. Donec at consectetur purus. Donec nibh dolor, blandit nec hendrerit ut, interdum vitae dui. Donec faucibus id elit nec interdum. Sed pretium placerat tortor eget vulputate. Donec non ipsum non lorem vehicula vulputate ut eu massa.
-</p>
+		{{#each experience}}
+			<article class="experience-wrapper">
+					<h2 class="title" > {{title}} <span> at </span> {{company}} </h2> 
+					<div class="time" >{{time}}</div>
+					<p class="time" >{{description}}</p>
+			</article>
+		{{/each}}
 
-<h3>Skills</h3>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula auctor, adipiscing ipsum in, gravida ligula. Vivamus enim ipsum, imperdiet in eros a, egestas laoreet erat. Proin ultricies purus nec blandit feugiat. Donec at consectetur purus. Donec nibh dolor, blandit nec hendrerit ut, interdum vitae dui. Donec faucibus id elit nec interdum. Sed pretium placerat tortor eget vulputate. Donec non ipsum non lorem vehicula vulputate ut eu massa.
-</p>
+</section>
+
+
+<section class="education">
+	<h3>Education.</h3>
+
+		{{#each education}}
+			<article class="education-wrapper">
+					<h2 class="title" > {{title}} <span> at </span> {{university}} </h2> 
+					<div class="time" >{{time}}</div>
+					<p class="time" >{{description}}</p>
+			</article>
+		{{/each}}
+</section>
+
+<section class="about">
+	<h3>About.</h3>
+
+			{{about}}
+
+</section>
+
+
+<section class="skills">
+	<h3>Skills.</h3>
+	
+		{{#each skills.software}}
+			<article class="skill-wrapper">
+					<h3 class="skill" > {{program}}</h3> 
+			</article>
+		{{/each}}
+
+</section>

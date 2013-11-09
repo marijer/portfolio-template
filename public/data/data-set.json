@@ -1,27 +1,86 @@
-[     
-    {
-      "guid": "c214d676-a056-4e77-914c-dfa96e5c93b8",
-      "title": "Europeana Contributions",
-      "year": "2013",
-      "link": "http://www.marijerooze.nl/projects/Europeana",
-      "description": "Quisque nisl mauris, pulvinar vel ultrices nec, varius in turpis. Aenean vel dolor porttitor, feugiat libero ut, interdum augue. Morbi vel convallis nunc. Sed commodo imperdiet convallis. Praesent malesuada, metus ut tincidunt ultricies, leo sem.",
-      "img": "test.jpg"
-    },
-    {
-      "guid": "c214d676-a056-4e77-914c-dfa96e5c93b8",
-      "title": "Collection Interactive News Graphics",
-      "year": "2012",
-      "link": "http://www.marijerooze.nl/thesis/graphics",
-      "description": "Quisque nisl mauris, pulvinar vel ultrices nec, varius in turpis. Aenean vel dolor porttitor, feugiat libero ut, interdum augue. Morbi vel convallis nunc. Sed commodo imperdiet convallis. Praesent malesuada, metus ut tincidunt ultricies, leo sem.",
-      "img": "test.jpg"
-    },
-    {
-      "guid": "c214d676-a056-4e77-914c-dfa96e5c93b8",
-      "title": "The Hero's Journey",
-      "year": "2013",
-      "link": "http://www.marijerooze.nl/Infograph",
-      "description": "Quisque nisl mauris, pulvinar vel ultrices nec, varius in turpis. Aenean vel dolor porttitor, feugiat libero ut, interdum augue. Morbi vel convallis nunc. Sed commodo imperdiet convallis. Praesent malesuada, metus ut tincidunt ultricies, leo sem.",
-      "img": "test.jpg"
+{
+    "projects": [
+        {
+            "guid": "c214d676-a056-4e77-914c-dfa96e5c93b8",
+            "title": "Europeana Contributions",
+            "year": "2013",
+            "link": "http://www.marijerooze.nl/projects/Europeana",
+            "description": "Quisque nisl mauris, pulvinar vel ultrices nec, varius in turpis. Aenean vel dolor porttitor, feugiat libero ut, interdum augue. Morbi vel convallis nunc. Sed commodo imperdiet convallis. Praesent malesuada, metus ut tincidunt ultricies, leo sem.",
+            "img": "test.jpg"
+        },
+        {
+            "guid": "c214d676-a056-4e77-914c-dfa96e5c93b8",
+            "title": "Collection Interactive News Graphics",
+            "year": "2012",
+            "link": "http://www.marijerooze.nl/thesis/graphics",
+            "description": "Quisque nisl mauris, pulvinar vel ultrices nec, varius in turpis. Aenean vel dolor porttitor, feugiat libero ut, interdum augue. Morbi vel convallis nunc. Sed commodo imperdiet convallis. Praesent malesuada, metus ut tincidunt ultricies, leo sem.",
+            "img": "test.jpg"
+        },
+        {
+            "guid": "c214d676-a056-4e77-914c-dfa96e5c93b8",
+            "title": "The Hero's Journey",
+            "year": "2013",
+            "link": "http://www.marijerooze.nl/Infograph",
+            "description": "Quisque nisl mauris, pulvinar vel ultrices nec, varius in turpis. Aenean vel dolor porttitor, feugiat libero ut, interdum augue. Morbi vel convallis nunc. Sed commodo imperdiet convallis. Praesent malesuada, metus ut tincidunt ultricies, leo sem.",
+            "img": "test.jpg"
+        }
+    ],
+    "cv": {
+        "experience": [
+            {
+                "title": "Web Designer",
+                "company": "Booking.com",
+                "time": "October 2012 - Present",
+                "description": "Doing stuff and some more stuff and some more stuff"
+            },
+            {
+                "title": "Creative Developer",
+                "company": "IJsfontein",
+                "time": "October 2012 - Present"
+            }
+        ],
+        "education": [
+            {
+                "title": "Javascript",
+                "university": "Code Fellows",
+                "time" : "October 2013 - November 2013",
+                "description": "descrition description description"
+            },
+            {
+                "title": "MA New Media",
+                "university": "University of Amsterdam",
+                "time" : "August 2010 - August 2012",
+                "description": "descrition description description"
+            },
+            {
+                "title": "Pre-master New Media",
+                "university": "University of Amsterdam",
+                "time" : "August 2009 - August 2010",
+                "description": "descrition description description"
+            },
+            {
+                "title": "BA Information & Interaction Design",
+                "university": "University of Amsterdam",
+                "time" : "August 2004 - January 2009",
+                "description": "descrition description description"
+            }            
+        ],
+        "about" : "i am here and there and over there",
+        "skills" : {
+            "software": [
+                {
+                    "program" : "Photoshop",
+                    "description": "program description"
+                },
+                {
+                    "program" : "Illustrator",
+                    "description" : "program description"
+                },
+                {
+                    "program" : "Sublime",
+                    "description": "program description"
+                }
+            ]
+        }
     }
-]
-  
+}
