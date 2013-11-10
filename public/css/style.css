@@ -1,17 +1,33 @@
 body {
-	font: 300 15px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: 300 15px/1.4 Helvetica,Arial,Verdana,sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
 a {
 	text-decoration: none;
+	color: #1D64A4;
 }
 
 ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h4 {
+	margin: 3px 0;
+	font-size: 16px;
+}
+
+h5 {
+	margin: 0;
+	font-weight: normal;
+	font-size: 14px;
 }
 
 .left {
@@ -33,10 +49,11 @@ ul {
 }
 
 .header {
-	background-color: #CCC;
 	height: auto;
 	border-top: 1px solid #DDD;
 	border-bottom: 1px solid #DDD;
+	background: #FFF url('../img/header_bg.jpg') no-repeat;
+	background-position-x: 80%;
 }
 
 .header .wrapper {
@@ -72,11 +89,15 @@ ul {
 	color: #FFF;
 }
 
-h2.title {
+.title {
 	margin: 0 0 5px;
 	font-weight: 200;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	line-height: 1.2em;
+}
+
+.title a {
+	font-weight: bold;
 }
 
 .project {
@@ -84,11 +105,12 @@ h2.title {
 	min-width: 300px;
 	margin: 0 50px 20px 0;
 	padding: 5px 10px 5px 0;
+	height: 200px; /* temp - need to fix */
 }
 
 .project-content {
 	width: 45%;
-	padding-right: 5%;
+	padding-right: 4%;
 }
 
 .project-img {
@@ -97,6 +119,50 @@ h2.title {
 
 .project-img img {
 	width: 100%;
+	border: 1px solid aliceblue;
+}
+
+/* CV */
+
+.cv-wrapper .left{
+	width: 50%;
+}
+
+.experience-wrapper {
+	font-family: Helvetica;
+}
+
+.skill-wrapper {
+	display: inline-block;
+	margin: 10px 15px 10px 0;
+}
+
+h2 {
+	margin: 5px 0;
+	font-size: 1.4em;
+}
+
+h4.skill {
+	font-weight: normal;
+	background-color: rgb(240, 240, 240);
+	padding: 2px 7px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 0;
+
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;	
+}
+
+h4.skill:hover {
+	background-color: rgb(209, 240, 250);
+}
+
+.time {
+	font-size: 14px;
+	color: #999;
 }
 
 /* FORM */

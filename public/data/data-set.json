@@ -5,24 +5,32 @@
             "title": "Europeana Contributions",
             "year": "2013",
             "link": "http://www.marijerooze.nl/projects/Europeana",
-            "description": "Quisque nisl mauris, pulvinar vel ultrices nec, varius in turpis. Aenean vel dolor porttitor, feugiat libero ut, interdum augue. Morbi vel convallis nunc. Sed commodo imperdiet convallis. Praesent malesuada, metus ut tincidunt ultricies, leo sem.",
-            "img": "test.jpg"
+            "description": "A visualization which provides a general insight into the growth that the Europeana library has made through in the last years. In collaboration with Joris Pekel.",
+            "img": "projects_europeana_01.jpg"
         },
         {
             "guid": "c214d676-a056-4e77-914c-dfa96e5c93b8",
             "title": "Collection Interactive News Graphics",
             "year": "2012",
             "link": "http://www.marijerooze.nl/thesis/graphics",
-            "description": "Quisque nisl mauris, pulvinar vel ultrices nec, varius in turpis. Aenean vel dolor porttitor, feugiat libero ut, interdum augue. Morbi vel convallis nunc. Sed commodo imperdiet convallis. Praesent malesuada, metus ut tincidunt ultricies, leo sem.",
-            "img": "test.jpg"
+            "description": "A filterable, visual collection interactive graphics from The Guardian and The New York Times.",
+            "img": "projects_collection_01.jpg"
+        },
+        {
+            "guid": "c214d676-a056-4e77-914c-dfa96e5c93b8",
+            "title": "Historical Controversies Now (V2)",
+            "year": "2012",
+            "link": "http://marijerooze.nl/uva/Controversies",
+            "description": "Visualization of the pace of different spheres online in collaboration with the Digital Methods Initiative.",
+            "img": "projects_controversies_01.jpg"
         },
         {
             "guid": "c214d676-a056-4e77-914c-dfa96e5c93b8",
             "title": "The Hero's Journey",
-            "year": "2013",
+            "year": "2012",
             "link": "http://www.marijerooze.nl/Infograph",
-            "description": "Quisque nisl mauris, pulvinar vel ultrices nec, varius in turpis. Aenean vel dolor porttitor, feugiat libero ut, interdum augue. Morbi vel convallis nunc. Sed commodo imperdiet convallis. Praesent malesuada, metus ut tincidunt ultricies, leo sem.",
-            "img": "test.jpg"
+            "description": "A playful interpretation of the Hero's journey.",
+            "img": "projects_heroes_01.jpg"
         }
     ],
     "cv": {
@@ -69,15 +77,33 @@
         "skills" : {
             "software": [
                 {
-                    "program" : "Photoshop",
+                    "name" : "Photoshop",
                     "description": "program description"
                 },
                 {
-                    "program" : "Illustrator",
+                    "name" : "Illustrator",
                     "description" : "program description"
                 },
                 {
-                    "program" : "Sublime",
+                    "name" : "Sublime",
+                    "description": "program description"
+                }
+            ],
+             "languages": [
+                {
+                    "name" : "HTML",
+                    "description": "program description"
+                },
+                {
+                    "name" : "JavaScript",
+                    "description" : "program description"
+                },
+                {
+                    "name" : "CSS",
+                    "description" : "program description"
+                },
+                {
+                    "name" : "Processing",
                     "description": "program description"
                 }
             ]

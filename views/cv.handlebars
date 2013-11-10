@@ -1,47 +1,65 @@
-<h2>CV</h2>
-<h3> Permanent Beta </h3>
+<h2> Permanent Beta </h2>
 
-<section class="experience">
-	<h3>Education</h3>
+<div class="cv-wrapper">
+	<div class='left'>
+		<section class="experience">
+			<h2>Experience.</h2>
 
-		{{#each experience}}
-			<article class="experience-wrapper">
-					<h2 class="title" > {{title}} <span> at </span> {{company}} </h2> 
-					<div class="time" >{{time}}</div>
-					<p class="time" >{{description}}</p>
-			</article>
-		{{/each}}
+				{{#each experience}}
+					<article class="experience-wrapper">
+							<h4 class="title" > {{title}} </h4>
+							<h5><span> at </span> {{company}} </h5> 
+							<div class="time" >{{time}}</div>
 
-</section>
+							<p class="descrip" >{{description}}</p>
+					</article>
+				{{/each}}
 
-
-<section class="education">
-	<h3>Education.</h3>
-
-		{{#each education}}
-			<article class="education-wrapper">
-					<h2 class="title" > {{title}} <span> at </span> {{university}} </h2> 
-					<div class="time" >{{time}}</div>
-					<p class="time" >{{description}}</p>
-			</article>
-		{{/each}}
-</section>
-
-<section class="about">
-	<h3>About.</h3>
-
-			{{about}}
-
-</section>
+		</section>
 
 
-<section class="skills">
-	<h3>Skills.</h3>
-	
-		{{#each skills.software}}
-			<article class="skill-wrapper">
-					<h3 class="skill" > {{program}}</h3> 
-			</article>
-		{{/each}}
+		<section class="education">
+			<h2>Education.</h2>
 
-</section>
+				{{#each education}}
+					<article class="education-wrapper">
+							<h4 class="title" > {{title}} </h4>
+							<div class="time" >{{time}}</div>				
+							<h5><span> at </span> {{university}} </h5> 
+							<p class="descrip" >{{description}}</p>
+					</article>
+				{{/each}}
+		</section>
+	</div>
+
+	<div class="left cv">
+		<section class="about">
+			<h2>About.</h2>
+
+					{{about}}
+
+		</section>
+
+
+		<section class="skills">
+			<h2>Skills.</h2>
+			
+				<div class="software-wrapper">
+					{{#each skills.software}}
+						<article class="skill-wrapper">
+								<h4 class="skill"> {{name}}</h4> 
+						</article>
+					{{/each}}
+				</div>
+
+				<div class="language-wrapper">
+					{{#each skills.languages}}
+						<article class="skill-wrapper">
+								<h4 class="skill"> {{name}}</h4> 
+						</article>
+					{{/each}}
+				</div>
+
+		</section>
+	</div>
+</div>

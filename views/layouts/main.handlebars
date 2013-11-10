@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <title>Marije Rooze - {{title}} </title>
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- css libs -->
     <link rel="stylesheet" href="/css/font-awesome.min.css">
 
 	<script>
-			var title = "{{title}}"; // sets title which is used in main for navigation, this does not seem to be optimal
+			var title = "{{title}}"; // sets title which is used in main for navigation,  does not seem to be optimal
 	</script>
 
 
@@ -19,21 +19,19 @@
 	<div class='body-wrapper'>
 		<div class='header'> 
 			<div class="wrapper">
-				Header information & that kind of stuff
+				Marije Rooze
 			</div>
 		</div>
 
-		<div class="submenu">
+		<nav class="submenu">
 			<div class="wrapper">
 				<ul class="submenu-list">
 					<li> <a href='/'></i>Work</a> </li>
 					<li> <a href='/cv'>CV</a> </li>
-					<li> <a href='/about'>About</a> </li>
-					<li> <a href='/add'>Add</a> </li>
 				</ul>	
 
 			</div>
-		</div>
+		</nav>
 
 		<div class="content-wrapper wrapper">
 	    	{{{body}}}
@@ -66,6 +64,6 @@
 	</div>
 
 	<script src="/js/jquery.min.js"> </script>
- 	<script src="/js/main.min.js"> </script>
+ 	<script src="/js/main.js"> </script>
 </body>
 </html>
